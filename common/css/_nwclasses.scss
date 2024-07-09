@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@use './util/util' as *;
+
+/* PCの時に非表示にしたい要素に付けるクラス ------------ */
+.dn-w {
+	@include media_wide {
+		display: none;
+	}
+}
+
+/* SPの時に非表示にしたい要素に付けるクラス ------------ */
+.dn-n {
+	@include media_narrow {
+		display: none;
+	}
+}
+
+.font-en {
+	@include font-family--en;
+}
+
+.fade {
+	transform: translateY(100px);
+	opacity: 0;
+	transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+	&.scr-in--on {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

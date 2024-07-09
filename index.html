@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- title / description -->
+		<title>かにわかJS-01</title>
+		<meta name="description" content="ここに説明文が入ります" />
+
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/common/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/common/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/common/favicon/favicon-16x16.png" />
+		<link rel="mask-icon" href="/assets/img/common/favicon/safari-pinned-tab.svg" color="#dc1405" />
+		<link rel="shortcut icon" href="/assets/img/common/favicon/favicon.ico" />
+
+		<!-- css -->
+		<link rel="stylesheet" href="./common/css/main.css" />
+		<link rel="stylesheet" href="./css/index.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header id="header">
+				<h1 class="header-logo">
+					<a class="header-logo__link" href="">
+						<img class="header-logo__svg" src="./common/img/img_logo.svg" alt="KANIWAKAロゴ" width="21" height="32" />
+					</a>
+					<!-- .header-logo__link -->
+				</h1>
+				<!-- .header-logo -->
+				<button class="menu">
+					<span class="menu__line"></span>
+					<span class="menu__line"></span>
+					<span class="menu__line"></span>
+				</button>
+				<!-- .menu -->
+				<div class="nav">
+					<figure class="nav-vis">
+						<img class="nav-vis__img" src="./common/img/img_nav.jpg" alt="" width="650" height="670" loading="lazy" />
+					</figure>
+					<!-- .nav-vis -->
+					<nav class="nav__in">
+						<ul class="nav-list">
+							<li class="nav-list__item">
+								<a class="nav-list__link font-en" href="./index.html">ABOUT</a>
+							</li>
+							<li class="nav-list__item">
+								<a class="nav-list__link font-en" href="./index.html">WORKS</a>
+							</li>
+							<li class="nav-list__item">
+								<a class="nav-list__link font-en" href="./index.html">CONTACT</a>
+							</li>
+						</ul>
+						<!-- .nav-list -->
+					</nav>
+					<!-- .nav__in -->
+				</div>
+				<!-- .nav -->
+			</header>
+			<!-- #header -->
+
+			<main id="main">
+				<section class="lcl-hero">
+					<div class="lcl-hero__in">
+						<img class="lcl-hero__vis" src="./img/hero/img_01.jpg" alt="メインビジュアル" width="530" height="645" />
+						<div class="lcl-hero__cnt">
+							<h2 class="lcl-hero__ttl font-en">KANIWAKA</h2>
+							<ul class="lcl-hero-nav">
+								<li class="lcl-hero-nav__item">
+									<button class="lcl-hero-nav__link" data-anchor="about">ABOUT</button>
+								</li>
+								<li class="lcl-hero-nav__item">
+									<button class="lcl-hero-nav__link" data-anchor="works">WORKS</button>
+								</li>
+								<li class="lcl-hero-nav__item">
+									<button class="lcl-hero-nav__link" data-anchor="contact">CONTACT</button>
+								</li>
+							</ul>
+							<!-- .lcl-hero-nav -->
+						</div>
+						<!-- .lcl-hero__cnt -->
+					</div>
+					<!-- .lcl-hero__in -->
+				</section>
+				<!--.lcl-hero -->
+
+				<section class="lcl-about anchor-about">
+					<div class="lcl-about__in">
+						<img class="lcl-about__vis scr-in fade" src="./img/about/img_01.jpg" alt="アバウトビジュアル" width="1000" height="250" loading="lazy" />
+						<h2 class="lcl-about__ttl font-en scr-in fade scr-in fade">ABOUT KANIWAKA</h2>
+						<a class="btn btn--white font-en scr-in fade" href="./index.html">VIEW MORE</a>
+						<p class="lcl-about__txt scr-in fade">
+							カニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかに
+							<br />
+							カニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかに
+							<br />
+							カニを滑らかに
+							<br />
+							カニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかに
+						</p>
+					</div>
+					<!-- .lcl-about__in -->
+				</section>
+				<!-- .lcl-about -->
+
+				<section class="lcl-works anchor-works">
+					<div class="lcl-works__in">
+						<div class="lcl-works__head scr-in fade">
+							<h2 class="lcl-works__ttl font-en">KANI WORKS</h2>
+							<a class="lcl-works-viewall" href="./index.html">
+								<span class="lcl-works-viewall__txt font-en">VIEW ALL WORKS</span>
+								<figure class="lcl-works-viewall__icons">
+									<img class="lcl-works-viewall__icon" src="./common/img/ico-up-right.svg" alt="" />
+									<img class="lcl-works-viewall__icon" src="./common/img/ico-up-right.svg" alt="" />
+								</figure>
+							</a>
+							<!-- .lcl-work-viewall -->
+						</div>
+						<!-- .lcl-works__head -->
+						<div class="lcl-works__cnt">
+							<div class="lcl-works-nav-wrp">
+								<ul class="lcl-works-nav">
+									<li class="lcl-works-nav__item is-active">
+										<button class="lcl-works-nav__btn font-en">WORKS 01</button>
+									</li>
+									<li class="lcl-works-nav__item">
+										<button class="lcl-works-nav__btn font-en">WORKS 02</button>
+									</li>
+									<li class="lcl-works-nav__item">
+										<button class="lcl-works-nav__btn font-en">WORKS 03</button>
+									</li>
+								</ul>
+							</div>
+							<!-- .lcl-works-nav -->
+							<ul class="lcl-works-list">
+								<li class="lcl-works-list__item scr-in fade">
+									<img class="lcl-works-list__img" src="./img/works/img_01.png" alt="work 01" width="500" height="288" loading="lazy" />
+									<div class="lcl-works-list__in">
+										<h3 class="lcl-works-list__ttl">WORK 01</h3>
+										<p class="lcl-works-list__txt">カニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑</p>
+										<a class="btn btn--black font-en" href="./index.html">VIEW MORE</a>
+									</div>
+								</li>
+								<li class="lcl-works-list__item scr-in fade">
+									<img class="lcl-works-list__img" src="./img/works/img_02.png" alt="work 02" width="500" height="288" loading="lazy" />
+									<div class="lcl-works-list__in">
+										<h3 class="lcl-works-list__ttl">WORK 02</h3>
+										<p class="lcl-works-list__txt">カニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑</p>
+										<a class="btn btn--black font-en" href="./index.html">VIEW MORE</a>
+									</div>
+								</li>
+								<li class="lcl-works-list__item scr-in fade">
+									<img class="lcl-works-list__img" src="./img/works/img_03.png" alt="work 03" width="500" height="288" loading="lazy" />
+									<div class="lcl-works-list__in">
+										<h3 class="lcl-works-list__ttl">WORK 03</h3>
+										<p class="lcl-works-list__txt">カニを滑らかにカニを滑らかにカニを滑らかにカニを滑らかにカニを滑</p>
+										<a class="btn btn--black font-en" href="./index.html">VIEW MORE</a>
+									</div>
+								</li>
+							</ul>
+							<!-- .lcl-works-list -->
+						</div>
+						<!-- .lcl-works__cnt -->
+					</div>
+					<!-- .lcl-works__in -->
+				</section>
+				<!-- .lcl-works -->
+			</main>
+			<!-- #main -->
+
+			<footer class="anchor-contact" id="footer">
+				<!-- prettier-ignore -->
+				<a class="footer-join font-en" href="./index.html">
+					<span class="footer-join__item" data-txt="J">J</span><span class="footer-join__item" data-txt="O">O</span><span class="footer-join__item" data-txt="I">I</span><span class="footer-join__item" data-txt="N">N</span><span class="footer-join__item" data-txt=" ">&nbsp;</span><span class="footer-join__item" data-txt="U">U</span><span class="footer-join__item" data-txt="S">S</span>
+				</a>
+				<!-- .footer-join -->
+				<ul class="footer-sns">
+					<li class="footer-sns__item">
+						<a class="footer-sns__link btn btn--white font-en" href="">X</a>
+					</li>
+					<li class="footer-sns__item">
+						<a class="footer-sns__link btn btn--white font-en" href="">INSTAGRAM</a>
+					</li>
+					<li class="footer-sns__item">
+						<a class="footer-sns__link btn btn--white font-en" href="">FACEBOOK</a>
+					</li>
+				</ul>
+				<!-- .footer-sns -->
+				<small class="footer__copyright font-en">&copy;KANIWAKA</small>
+			</footer>
+			<!-- #footer -->
+		</div>
+
+		<!-- import js files -->
+		<!-- jQuery ※必要なければ消す -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+		<!-- original -->
+		<script src="./common/js/main.js"></script>
+		<script src="./js/index.js"></script>
+		<script src="./js/hanson.js"></script>
+	</body>
+</html>

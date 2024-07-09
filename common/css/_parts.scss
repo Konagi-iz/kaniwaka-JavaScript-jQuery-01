@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@use './util/util' as *;
+
+/*------------------------------------------------
+Button
+------------------------------------------------*/
+.btn {
+	display: block;
+	border-radius: 100vmax;
+	border: 1px solid;
+	padding-block: 4px;
+	width: 152px;
+	@include fz(14);
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 0.07em;
+	text-align: center;
+	transition: background 0.2s ease-out, color 0.2s ease-out;
+	@include media_hover {
+		&:hover {
+			background: transparent !important;
+		}
+	}
+
+	/* white ------------ */
+	&.btn--white {
+		border-color: $c-white;
+		background: $c-white;
+		color: $c-black;
+		@include media_hover {
+			&:hover {
+				color: $c-white;
+			}
+		}
+	}
+
+	/* black ------------ */
+	&.btn--black {
+		border-color: $c-black;
+		background: $c-black;
+		color: $c-white;
+		@include media_hover {
+			&:hover {
+				color: $c-black;
+			}
+		}
+	}
+}
