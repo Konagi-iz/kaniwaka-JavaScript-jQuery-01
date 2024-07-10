@@ -1,6 +1,6 @@
 /* Menu ------------ */
 $('.menu').on('click', () => {
-	$('.nav, .menu').toggleClass('is-active');
+	$('.menu, .nav').toggleClass('is-active');
 
 	if ($('body').css('overflow') === 'hidden') {
 		$('body').css('overflow', '');
@@ -8,12 +8,6 @@ $('.menu').on('click', () => {
 		$('body').css('overflow', 'hidden');
 	}
 });
-
-function orderPizza(type, topping) {
-	console.log(`ピザ：${type} トッピング：${topping} を注文しました！`);
-}
-
-orderPizza('マルゲリータ', 'バジル');
 
 /* ScrollIn ------------ */
 $('.scr-in').each((index, el) => {
@@ -43,3 +37,29 @@ $(window).on('scroll', () => {
 
 	currentScroll = scroll;
 });
+
+/* Stalker ------------ */
+$(window).on('mousemove', (event) => {
+	const x = event.clientX;
+	const y = event.clientY;
+
+	$('.stalker').css('translate', `${x}px ${y}px`);
+});
+
+$(window).hover(
+	() => {
+		$('.stalker').addClass('is-active');
+	},
+	() => {
+		$('.stalker').removeClass('is-active');
+	}
+);
+
+$('a, button').hover(
+	() => {
+		$('.stalker').addClass('is-hover');
+	},
+	() => {
+		$('.stalker').removeClass('is-hover');
+	}
+);

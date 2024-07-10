@@ -502,10 +502,13 @@ Header
 }
 #header .nav {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
   display: flex;
   opacity: 0;
   visibility: hidden;
+  width: 100%;
+  height: 100svh;
   background: #b8b8b8;
   transition: opacity 1.2s cubic-bezier(0.19, 1, 0.22, 1), visibility 1.2s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -625,6 +628,30 @@ Footer
   font-weight: 600;
   line-height: 1;
   letter-spacing: 0.15em;
+}
+
+/*------------------------------------------------
+Stalker
+------------------------------------------------*/
+.stalker {
+  z-index: 2147483647;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: white;
+  transition: opacity 0.3s ease-out, transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+  pointer-events: none;
+}
+.stalker.is-active {
+  opacity: 1;
+}
+.stalker.is-hover {
+  transform: scale(5);
 }
 
 /*------------------------------------------------
